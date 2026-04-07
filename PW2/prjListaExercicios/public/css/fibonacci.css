@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+
+}
+
+body, input, button{
+    font-family: 'Instrument Sans', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+input{
+    font-size: 1.1rem;
+}
+
+input, button{
+    padding: 6px 10px;
+    border-radius: .4em;
+}
+
+button{
+    cursor: pointer;
+}
+
+.divForm{
+    width: 20%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

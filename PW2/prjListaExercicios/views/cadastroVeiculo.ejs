@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Cadastro de Veículo</title>
+    <link rel="stylesheet" href="css/veiculo.css">
+</head>
+<body>
+    <h1>Cadastre seu Veículo</h1>
+
+    <main>
+        <div class="divForm">
+            <form action="/enviarCadastroVeiculo" method="post">
+                <div class="divMarca">
+                    <label for="marca">Marca</label>
+                    <input type="text" name="marca" id="marca" required>
+                </div>
+                
+                <div class="divModelo">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" id="modelo" name="modelo" required>
+                </div>
+                
+                <div class="divCor">
+                    <label for="cor">Cor</label>
+                    <input type="text" id="cor" name="cor" required>
+                </div>
+                
+                <div class="divValor">
+                    <label for="valor">Valor</label>
+                    <input type="text" id="valor" name="valor" required></textarea>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="divTabela">
+            <table class="<%= classe %>">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Cor</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%= modelo %></td>
+                        <td><%= cor %></td>
+                        <td><%= valor %></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>

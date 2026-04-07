@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+    --corFundo: #141414;
+    --corFundoInput: #393939;
+    --corBordaInput: #828282;
+    --corTexto: #eaeaea;
+    --corBordaTabela: #585858;
+    --corFundoTabela: #222222;
+
+    --corTextoAzul: #76a3f6;
+    --corTextoVermelho: #f4695c;
+}
+
+body{
+    background: var(--corFundo);
+}
+
+body, input, label, button{
+    font-family: 'Instrument Sans', Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+input, button{
+    font-size: 1.1rem;
+    outline: none;
+    padding: 6px 10px;
+    border-radius: .4em;
+    border: none;
+}
+
+input{
+    background: var(--corFundoInput);
+    border: 1px solid var(--corBordaInput);
+}
+
+button{
+    cursor: pointer;
+}
+
+table, th, td{
+    padding: 3px 8px;
+    font-size: 1.15rem;
+}
+
+table, td{
+    border: 1px solid var(--corBordaTabela);
+    background: var(--corFundoTabela);
+}
+
+.divForm{
+    width: 20%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+    }
+}
+
+h1, h2, label, input, table{
+    color: var(--corTexto);
+}
+
+p{
+    line-height: .7;
+    font-size: 1.15rem;
+}
+
+.tabelaDadosAzuis{
+    color: var(--corTextoAzul);
+}
+
+.tabelaDadosVermelhos{
+    color: var(--corTextoVermelho);
+}

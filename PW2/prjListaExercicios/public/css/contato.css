@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+    --corFundo: #0f0922;
+    --corFundoInput: #24194e;
+    --corBordaInput: #5e4ca7;
+    --corPrimaria: #BF71DA;
+    --corSecundaria: #5432C0;
+    --corBordaBotaoHover: #7451e4;
+    --corTexto: #e2e2e2;
+}
+
+button{
+    cursor: pointer;
+    font-weight: 800;
+    background: var(--corSecundaria);
+    border: 2px solid;
+    border-color: var(--corSecundaria);
+    padding: 6px 10px;
+    font-size: 1.4rem;
+    border-radius: .4em;
+    transition: .3s;
+}
+button:hover{
+    color: var(--corTexto);
+    border-color: var(--corBordaBotaoHover);
+}
+
+textarea{
+    resize: none;
+    height: 80px;
+}
+
+textarea, input{
+    background: var(--corFundoInput);
+    border: 1px solid var(--corBordaInput);
+    padding: 6px 8px;
+    outline: none;
+    border-radius: .4em;
+    color: var(--corTexto);
+    font-size: 1rem;
+}
+
+body{
+    background: var(--corFundo);
+}
+
+body, input, button, textarea{
+    font-family: 'Instrument Sans', Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-size: 1.2rem;
+    color: var(--corTexto);
+    font-weight: 600;
+}
+
+.divForm{
+    width: 30%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: .35em;
+    }
+}
+
+h1, h2{
+    color: var(--corTexto);
+}
+
+p{
+    line-height: .7;
+    font-size: 1.15rem;
+    color: var(--corPrimaria);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Fibonacci</title>
+    <link rel="stylesheet" href="css/fibonacci.css">
+</head>
+<body>
+    <h1>Sequência Fibonacci</h1>
+    <h2>Insira um número</h2>
+
+    <div class="divForm">
+        <form action="/enviarFibonacci" method="post">
+            <input type="number" name="numero" id="numero" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="resultado">
+        <h2><%= resultado %></h2>
+    </div>
+    
+</body>
+</html>
