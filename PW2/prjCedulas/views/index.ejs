@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cédulas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="fundo">
+        <div class="divEsquerda">
+
+            <div class="divFormENotas">
+                <form action="/enviarDinheiro" method="post">
+                    <div class="divTextos">
+                        <h1>Caixa Eletrônico</h1>
+                        <h2>Saque seu dinheiro!</h2>
+                    </div>
+    
+                    <div class="divInputEBotao">
+                        <input type="number" name="num" id="num" placeholder="R$...">
+                        <button type="submit">Sacar</button>
+                        <form action="/reiniciar" method="post">
+                            <button type="submit">Reiniciar</button>
+                        </form>
+                    </div>
+                </form>
+            
+                <% if(resultado) { %>
+                    <div class="divNotas">
+                        <% resultado.forEach(cedula => {
+                            for(let i = 0; i < cedula.qtd; i++) { %>
+                                <img class="imgNota" src="/images/<%= cedula.cedula %>.jpg">
+                            <% }
+                        }) %>
+                    </div>
+                <% } %>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
