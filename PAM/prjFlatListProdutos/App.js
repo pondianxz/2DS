@@ -1,4 +1,3 @@
-// import { StatusBar } from 'expo-status-bar';
 import { FlatList, Text, View } from 'react-native';
 import {styles} from './components/styles.js';
 import {DATA} from './components/data.js';

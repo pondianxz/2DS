@@ -15,12 +15,12 @@ app.post('/enviarDinheiro', (req, res) => {
     let resultado = [];
     
     for(let cedula of cedulas){
-        let qtd = Math.floor(num / cedula);
+        let valor = Math.floor(num / cedula);
 
-        if(qtd > 0){
+        if(valor > 0){
             resultado.push({
                 cedula: cedula,
-                qtd: qtd
+                valor: valor
             });
             
             num %= cedula;

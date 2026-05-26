@@ -68,8 +68,7 @@ form{
 
 .fundo{
     background: url(../images/fundo.jpg);
-    background-position: 100%;
-    background-size: 80%;
+    background-size: cover;
     height: 100%;
 }
 
