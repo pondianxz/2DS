@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+:root{
+    --corPrimaria: #6e97d4;
+    --corPrimariaEscura: #46689a;
+    --corPrimariaMaisEscura: #36527c;
+    --corSecundaria: #e1f1ff;
+}
+
+body, button, input{
+    font-family: 'Wix Madefor Display', Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.txSenha{
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #fe3b31;
+}
+
+h2,label{
+    font-size: 1.2rem;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+input{
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: .4em;
+}
+    
+
+
+.divTabela{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    overflow-y: auto;
+    
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+.divTabela::-webkit-scrollbar { 
+    display: none;  /* Older Safari and Chromium */
+}
+
+button{
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 6px 20px;
+    cursor: pointer;
+    background: var(--corPrimariaEscura);
+    color: var(--corSecundaria);
+    border: 2px solid var(--corPrimariaMaisEscura);
+    border-radius: .4em;
+}
+
+#divPrincipalIndex{
+    justify-content: center;
+}
+
+.divPrincipal{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    width: 63%;
+    align-items: center;
+    height: 100%;
+    box-shadow: 0 0 25px 0 #00000065;
+    background: #ffffff6d;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.divBotoes{
+    display: flex;
+    gap: 10px;
+}
+
+.divTudo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/fundo4.png);
+    background-size: cover;
+}
+
+tr{
+    font-size: 1.3rem;
+}
+
+table{
+    background: #fff;
+    width: 50%;
+    height: fit-content;
+}
+
+td, th{
+    border: 1px solid black;
+}
+
+th{
+    text-align: left;
+    padding: 3px 15px;
+}
+
+td{
+    padding: 10px 15px;
+}
+
+.txSenhaTopoFila{
+    font-size: 3.2rem;
+}
+
+.txInfoTopoFila{
+    font-weight: 800;
+}
+
+.formIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    button{
+        width: 50%;
+    }
+}
+
+.divSuaSenha{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+

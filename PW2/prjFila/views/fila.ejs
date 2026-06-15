@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaúdeMais - Fila de Atendimento</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="divTudo">
+        <div class="divPrincipal">
+
+            <div class="divSuaSenha">
+                <h2>Sua senha é</h2>
+                <h1 class="txSenha"><%= senha %></h1>
+                <h2>Aguarde a chamada da senha no painel</h2>
+    
+                <div class="divBotoes">
+                    <form action="/voltar" method="post">
+                        <button type="submit">Página Inicial</button>
+                    </form>
+                    
+                    <form action="/atualizar" method="post">
+                        <button type="submit">Atualizar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="divTopoFila">
+                <h1 class="txInfoTopoFila txSenhaTopoFila"><%= senhaAtual %></h1>
+                <h1 class="txInfoTopoFila txNomeTopoFila"><%= nomeAtual %></h1>
+                <h1 class="txInfoTopoFila txGuicheTopoFila">Guichê <%= guicheAtual %></h1>
+            </div>
+
+            <div class="divTabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Senha</th>
+                            <th>Nome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(let i = 0; i < fila.length; i++){ %>
+                            <tr>
+                                <td><%= fila[i].senha %></td>
+                                <td><%= fila[i].nome %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
